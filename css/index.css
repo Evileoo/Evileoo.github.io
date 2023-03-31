@@ -13,6 +13,8 @@ body{
 
     font-family: 'Quicksand', sans-serif;
     background-color: #F7F7F7;
+    
+    font-size: 150%;
 }
 
 nav{
@@ -20,7 +22,7 @@ nav{
     height: 100vh;
     width: 10vw;
 
-    overflow: hidden;
+    /*overflow: hidden;*/
 
     display: flex;
     align-items: center;
@@ -35,7 +37,7 @@ nav ul li{
     margin-top: 5vh;
     margin-bottom: 5vh;
 
-    font-size: 120%;
+    font-size: 90%;
     color: #F7F7F7;
 }
 
@@ -64,10 +66,115 @@ section{
     height: 100%;
 
     display: flex;
-    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .home header{
-    font-size: 500%;
+    font-size: 300%;
     font-weight: bold;
+}
+
+.home .subtitle{
+    font-size: 150%;
+    font-style: italic;
+}
+
+
+/*
+*
+* ABOUT
+*
+*/
+
+.about{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about .subArticle{
+    overflow-y: scroll;
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .subArticle::-webkit-scrollbar{
+    display: none;
+}
+
+.about .categoryTitle{
+    font-weight: bold;
+}
+
+.about .categorySubtitle{
+    font-style: italic;
+    font-size: 80%;
+    border-bottom: 1px solid #6B6969;
+    padding-bottom: 1%;
+    margin-bottom: 1%;
+}
+
+.about .bars{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: 100;
+}
+
+.about .bar{
+    width: 50%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.about .limits{
+    width: 200px;
+    height: 10px;
+    background-color: #e0e0e0;
+}
+
+.about .language{
+    margin-right: 10%;
+}
+
+.languageBar{
+    height: 100%;
+    background-color: blue;
+}
+
+#javascript{
+    width: 80%;
+}
+
+#php{
+    width: 85%;
+}
+
+#sql{
+    width: 75%;
+}
+
+#java{
+    width: 70%;
+}
+
+#html{
+    width: 95%;
+}
+
+#css{
+    width: 70%;
 }
