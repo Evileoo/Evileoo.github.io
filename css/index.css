@@ -206,20 +206,21 @@ section{
 }
 
 .projectBar{
-    width: 100%;
     height: 40%;
+
     display: flex;
     align-items: center;
-    overflow-x: auto;
 }
 
 .project{
-    margin-left: 5%;
+    height: 100%;
+    width: 20vw;
+    overflow: hidden;
+    display: flex;
+
     margin-right: 5%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: #6B6969;
 }
 
 .project:hover{
@@ -227,33 +228,79 @@ section{
 }
 
 .preview{
+    width: 100%;
+    height: 100%;
+
     display: flex;
     flex-direction: column;
+}
+
+.preview .head{
+    height: 30%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    border-bottom: 1px solid #F7F7F7;
+}
+
+#p1 .preview .head, #p2 .preview .head{
+    background-image: url("https://adiss-gc.fr/wp-content/uploads/2020/07/Logo-ADISS.png");
+}
+
+#p3 .preview .head{
+    background-image: url("https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0b5493894cf60b300587_full_logo_white_RGB.svg");
+}
+
+#p4 .preview .head{
+   background-image: url("https://static.wikia.nocookie.net/minecraft_gamepedia/images/8/85/Minecraft_franchise_logo.svg/revision/latest?cb=20210922045938");
+}
+
+.preview .head .type{
+    background-color: rgba(50, 50, 50, 0.5);
+    color: white;
+
+    display: flex;
+    justify-content: center;
+}
+
+.preview .body{
+    color: #F7F7F7;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: center;
-
-    background-color: #cfcfcf;
-    padding: 20px;
 }
 
-.preview:hover .title{
-    font-weight: bold;
-}
-
-.view{
-    transform: scale(0);
-    height: 0;
-    width: 50vw;
-
-    position: absolute;
-    top: 25vh;
-    left: 25vw;
-
-    padding: 25px;
-
+.preview .description{
+    height: 70%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.preview .description a{
+    color: #F7F7F7;
+}
+
+.fullview{
+    color: #F7F7F7;
+    width: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fullview .notes{
+    height: 70%;
+    overflow-y: auto;
+}
+
+.fullview .pictures{
+    height: 30%;
+    overflow-y: auto;
 }
 
 

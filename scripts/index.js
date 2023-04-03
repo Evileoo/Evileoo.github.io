@@ -32,11 +32,14 @@ $(document).ready(function(){
 
     $(".projects > .projectBar > .project").on("click", function(){
         var id = $(this).attr('id');
-        console.log($("#"+id+" .view").css("height"));
-        if($("#"+id+" .view").css("height") === "0px"){
-            $("#"+id+" .view").css({backgroundColor:"white", height:"50vh", transform:"scale(1)"});
+        if($("#"+id+" .fullview").css("width") === "0px"){
+            $("#"+id+" .fullview").animate({width:"60%"});
+            $("#"+id+" .preview").animate({width:"40%"});
+            $("#"+id).animate({width:"40vw"});
         } else {
-            $("#"+id+" .view").css({backgroundColor:"black", height:"0px", transform:"scale(0)"});
+            $("#"+id+" .fullview").animate({width:"0"});
+            $("#"+id+" .preview").animate({width:"100%"});
+            $("#"+id).animate({width:"20vw"});
         }
     });
 });
