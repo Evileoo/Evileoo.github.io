@@ -227,6 +227,10 @@ section{
     width: 50%;
 }
 
+#git{
+    width: 60%;
+}
+
 /*
 *
 * PROJECTS
@@ -351,10 +355,6 @@ section{
 .logos{
     width: 2vh;
     height: 2vh;
-}
-
-#twitterLogo{
-    fill:#1D9BF0;
 }
 
 .contact{
