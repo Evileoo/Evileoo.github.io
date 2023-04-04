@@ -30,7 +30,7 @@ $(document).ready(function(){
         $(".contact").animate({marginLeft: "0", marginTop:"0"}, 1000);
     });
 
-    $(".projects > .projectBar > .project").on("click", function(){
+    $(".project").on("click", function(){
         var id = $(this).attr('id');
         if($("#"+id+" .fullview").css("width") === "0px"){
             $("#"+id+" .fullview").animate({width:"60%"});
