@@ -66,8 +66,24 @@ section{
     height: 100%;
 
     display: flex;
+}
+
+.home .presentation{
+    width: 40%;
+    height: 100%;
+
+    display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.home .doc{
+    width: 60%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .home header{
@@ -89,6 +105,11 @@ section{
 .home .gitLogo{
     width: 4vh;
     height: 4vh;
+}
+
+.home .cv{
+    width: 50%;
+    height: 70%;
 }
 
 /*
